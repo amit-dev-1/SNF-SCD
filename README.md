@@ -13,6 +13,16 @@ following steps invovle in our code, please see the code attched in main branch\
 Step1: handle SCD type 2 using Snowflake we will create stream on the top of stg table so all the delta will get capture in stream object.\
 Step 2: we also create column in target tagble that hold unique value, using the sequenece in Snowflake, later we will use this column in merge statement while updating the records.\
 Step 3: we also create the view on top of stream object, in view definition we will mention the logic to calculate the DML_TYPE (which row in stream should have 'I', which should have 'U' and 'D' flag)\
-Step 4: Finally we will use the merge statement with view and target table to update and insert the records.
+Step 4: Finally we will use the merge statement with view and target table to update and insert the records.\
+Step 5: later to automate the script execution, we can create the task and and using CRON we can mention the schedule timing.
+
+# __________ minute (0-59)
+# | ________ hour (0-23)
+# | | ______ day of month (1-31, or L)
+# | | | ____ month (1-12, JAN-DEC)
+# | | | | _ day of week (0-6, SUN-SAT, or L)
+# | | | | |
+# | | | | |
+  * * * * *
 
 

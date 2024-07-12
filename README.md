@@ -16,13 +16,7 @@ Step 3: we also create the view on top of stream object, in view definition we w
 Step 4: Finally we will use the merge statement with view and target table to update and insert the records.\
 Step 5: later to automate the script execution, we can create the task and and using CRON we can mention the schedule timing.
 
-# __________ minute (0-59)
-# | ________ hour (0-23)
-# | | ______ day of month (1-31, or L)
-# | | | ____ month (1-12, JAN-DEC)
-# | | | | _ day of week (0-6, SUN-SAT, or L)
-# | | | | |
-# | | | | |
-  * * * * *
+![image](https://github.com/user-attachments/assets/f4bcb11f-021f-4706-9bfe-641757c60e56)
+
 
 

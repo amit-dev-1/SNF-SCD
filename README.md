@@ -8,6 +8,7 @@ SCD type 3: come into the picture when we want to preserve the history for the s
   -> For SCD type 3 allow us to keep how many past version of column, we want in table(till 1st past record, or till 2nd past records ...).
   -> table structure look like,  **emp_id    emp_name   salary    designation    prevsalary_1st    prevsalary_2st** 
 
----------------****************************************************************************************----------------------------------------------------
+********************************************************************************************************************************************************
+
 
 

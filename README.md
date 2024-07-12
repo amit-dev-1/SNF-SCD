@@ -14,7 +14,7 @@ Step1: handle SCD type 2 using Snowflake we will create stream on the top of stg
 Step 2: we also create column in target tagble that hold unique value, using the sequenece in Snowflake, later we will use this column in merge statement while updating the records.\
 Step 3: we also create the view on top of stream object, in view definition we will mention the logic to calculate the DML_TYPE (which row in stream should have 'I', which should have 'U' and 'D' flag)\
 Step 4: Finally we will use the merge statement with view and target table to update and insert the records.\
-Step 5: later to automate the script execution, we can create the task and and using CRON we can mention the schedule timing.
+Step 5: later to automate the script execution, we can create the task and and using CRON we can mention the schedule timing. example: schedule= 'USING CRON 60 * * * MON-FRI Asia/Kolkata'\
 
 ![image](https://github.com/user-attachments/assets/f4bcb11f-021f-4706-9bfe-641757c60e56)
 

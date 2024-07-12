@@ -1,4 +1,4 @@
-In field of data warehouse we might seen the scenario where we need to preserve the history of deleled and updated records.\n
+In field of data warehouse we might seen the scenario where we need to preserve the history of deleled and updated records.
 SCD type 1: In SCD type 1 if new record will come we will insert it into target table, if same records will come with updated value then we will update that records in target              table
 SCD type 2: come into the picture when we want to preserve the history at row level(for all the columns).
   ->It will consume more storage space as it is maintaining all the history of given PK combination.
